@@ -1,52 +1,44 @@
 {
   "name": "cvhub-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "engines": {
     "node": "18.x"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.388.0",
-    "@google-cloud/storage": "^7.7.0",
-    "aws-sdk": "^2.1433.0",
-    "bcrypt": "^5.1.0",
-    "cloudinary": "^1.40.0",
+    "@aws-sdk/client-s3": "^3.896.0",
+    "@google-cloud/storage": "^7.17.1",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.7.0",
     "cors": "^2.8.5",
-    "data-uri": "^0.0.3",
     "datauri": "^4.1.0",
-    "date-fns": "^2.30.0",
-    "dompurify": "^3.0.5",
-    "dotenv": "^16.0.3",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",
-    "express-session": "^1.17.3",
-    "helmet": "^7.0.0",
-    "mongoose": "^7.1.1",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "node-cron": "^3.0.3",
-    "nodemailer": "^6.9.3",
-    "openai": "^3.3.0",
-    "passport": "^0.6.0",
-    "passport-facebook": "^3.0.0",
-    "passport-github": "^1.1.0",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.18.2",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.6",
+    "openai": "^5.23.0",
+    "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-linkedin-oauth2": "^2.0.0",
     "passport-local": "^1.0.0",
-    "passport-twitter": "^1.0.4",
-    "puppeteer": "^20.9.0",
-    "puppeteer-core": "^20.9.0",
-    "stripe": "^13.4.0"
+    "puppeteer": "^24.22.3",
+    "stripe": "^18.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.1.10"
   }
 }

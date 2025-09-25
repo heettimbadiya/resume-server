@@ -1,7 +1,6 @@
 const express = require("express");
 const authRouter = require("./auth/auth.route");
 const contactRouter = require("./contact.route");
-const gptRouter = require("./chat_gpt/gpt.route");
 const resumeRouter = require("./resume/resume.route");
 const letterRouter = require("./cover-letter/letter.route");
 const pdfRouter = require("./pdf.route");
@@ -16,7 +15,6 @@ const webhooksRouter = require("./webhooks.route");
 const V1Router = express.Router();
 V1Router.use("/auth", authRouter);
 V1Router.use("/contact", contactRouter);
-V1Router.use("/content", gptRouter);
 V1Router.use("/resume", resumeRouter);
 V1Router.use("/letter", letterRouter);
 V1Router.use("/files", filesRouter);
